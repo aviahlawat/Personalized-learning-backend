@@ -8,7 +8,7 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Install system dependencies (optional, only if needed)
+# Install system dependencies (only if needed)
 # RUN apt-get update && apt-get install -y build-essential
 
 # Copy requirements first for caching

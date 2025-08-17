@@ -11,8 +11,9 @@ from dotenv import load_dotenv
 
 # --- Initialization ---
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])
 load_dotenv()
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
+CORS(app, origins=[frontend_url])
 
 # Configure the Gemini AI model
 try:
